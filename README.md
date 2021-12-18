@@ -11,10 +11,10 @@ This repo serves as the code repository for the College of DuPage Engineering an
 - (More software added later)
 
 # Programming Languages Used
-- Python (main)
+- Python 3 (primary)
 - C++
 - Linux 
 
 # Requirements
 - Must be operated on a machine running Ubuntu 18.04
-- We use ROS Melodic, other versions such as Noetic or ROS2 Foxy will not work.
+- We use ROS Melodic, other versions such as Noetic or ROS2 Foxy are not compatable.
