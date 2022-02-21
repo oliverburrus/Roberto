@@ -1,0 +1,37 @@
+# HUGE thanks to automaticaddison.com for providing the majority of this tutorial.
+
+# Plug the RPLIDAR in and paste the following in a linux terminal.
+
+sudo chmod 666 /dev/ttyUSB0
+
+sudo apt-get update
+sudo apt-get install cmake python-catkin-pkg python-empy python-nose python-setuptools libgtest-dev python-rosinstall python-rosinstall-generator python-wstool build-essential git
+cd ~/ros_catkin_ws/
+
+gedit ~/.bashrc
+#Add the following at the END of the .bashrc file
+
+source /opt/ros/melodic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+#Save and close
+
+source ~/catkin_ws/devel/setup.bash
+cd src
+sudo git clone https://github.com/Slamtec/rplidar_ros.git
+cd ~/ros_catkin_ws/
+catkin_make
+
+#Run the RPLIDAR launch file
+roslaunch rplidar_ros rplidar.launch
+
+rostopic list
+# Make sure /scan is in the rostopic list
+
+# Get raw sensor data
+rostopic echo /scan
+
+# Running the scan in RVIZ
+rviz
+# Change fixed frame from "map" to "laser"
+# Add -> LaserScan -> topic: /scan
