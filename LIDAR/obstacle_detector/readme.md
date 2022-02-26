@@ -14,7 +14,7 @@ roslaunch check_obstacle detector.launch
 
 INSTALLATION (only needed once):
 ```
-# Install dependcies.
+# Install dependencies.
 sudo apt-get update
 sudo apt-get install cmake python-catkin-pkg python-empy python-nose python-setuptools libgtest-dev python-rosinstall python-rosinstall-generator python-wstool build-essential git
 
@@ -26,7 +26,7 @@ gedit ~/.bashrc
 source /opt/ros/melodic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
-#Save and close
+# Save and close
 
 source ~/catkin_ws/devel/setup.bash
 cd src
