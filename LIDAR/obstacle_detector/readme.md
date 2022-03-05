@@ -7,6 +7,7 @@ ls -l /dev | grep ttyUSB0
 sudo chmod 666 /dev/ttyUSB0
 
 # catkin_make and launch
+cd catkin_ws
 catkin_make
 roslaunch rplidar_ros rplidar.launch
 roslaunch check_obstacle detector.launch
