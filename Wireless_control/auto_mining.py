@@ -7,10 +7,12 @@ def raise_augur_client(x, y):
     rospy.wait_for_service('actuator_extend')
     try:
         actuator_extend = rospy.ServiceProxy('actuator_extend', SetBool)
-        resp1 = actuator_extend("True")
+        resp1 = actuator_extend(True)
         return resp1.sum
     except rospy.ServiceException, e:
         print "Service call failed: %s"%e
         
         
-qq
+#Step 2: Push augur into ground
+#Step 3: Pull augur out of ground
+#Step 4: Retract augur
