@@ -1,20 +1,15 @@
-# ETCRobotics2022
-This repo serves as the code repository for the College of DuPage Engineering and Technology Club 2022 Robotics teams' sole competition, NASA Lunabotics. 
+# College of DuPage Engineering and Technology Club Lunabotics 2022
+This repo serves as the code repository for the College of DuPage Engineering and Technology Club 2022 Robotics NASA Lunabotics competition robot, Roberto. 
 
-# Software/Hardware Used
-- Nvidia Jetson/Ras Pi 4
-- CANBus
+# Hardware Used
+- Nvidia Jetson
+- CANAble
 - Falcon 500 motors
-- (More hardware added later)
-- ROS Melodic
-- GazeboSim
-- (More software added later)
 
 # Programming Languages Used
-- Python 3 (primary)
-- C++
-- Linux 
+- Python 2.7
+- C++ 
 
 # Requirements
 - Must be operated on a machine running Ubuntu 18.04
-- We use ROS Melodic, other versions such as Noetic or ROS2 Foxy are not compatable.
+- ROS Melodic
