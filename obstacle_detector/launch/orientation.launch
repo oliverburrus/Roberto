@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="check_obstacle" type="orientation.py" name="orientation" output="screen">
+
+	</node>
+</launch>

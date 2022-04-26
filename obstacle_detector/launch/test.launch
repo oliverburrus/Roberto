@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="check_obstacle" type="nav_autonomy_Twist.py" name="check_obstacle" output="screen">
+
+	</node>
+</launch>
